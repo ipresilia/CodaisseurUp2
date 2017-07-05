@@ -22,6 +22,11 @@
        <li><%= !@event.includes_drinks ? ("<s>Drinks</s>").html_safe : "Drinks" %></li>
      </ul>
 
+     <h4>Themes</h4>
+     <% @themes.each do |theme| %>
+       <span class="label label-success"><%= theme.name %></span>
+     <% end %>
+
    </div>
 
  </div>
